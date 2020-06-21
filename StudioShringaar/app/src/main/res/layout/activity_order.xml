@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.order.Order">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="enterAlways"
+            app:title="Order"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/orderRecyclerView"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noItem"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="140dp"
+                android:src="@drawable/ic_wishlistitem"/>
+        </LinearLayout>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose from variety of products!"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add items to the bag"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/containedButton"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:onClick="shopnow"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Shop Now"/>
+    </LinearLayout>
+
+</LinearLayout>

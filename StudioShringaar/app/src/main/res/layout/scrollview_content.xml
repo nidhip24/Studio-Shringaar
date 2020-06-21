@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Top Selection"
+        android:textSize="16sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="5dp"
+        android:saveEnabled="true"
+        android:scrollbars="none">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/product_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="7dp"
+            android:paddingStart="7dp"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:alignItems="flex_start">
+
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+    </HorizontalScrollView>
+</LinearLayout>

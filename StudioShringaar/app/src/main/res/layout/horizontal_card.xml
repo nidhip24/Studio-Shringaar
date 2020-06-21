@@ -1,0 +1,79 @@
+
+<androidx.cardview.widget.CardView app:cardCornerRadius="6dp"
+    android:layout_width="160dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_height="190dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:transitionName="blue_name"
+            android:layout_gravity="center"
+            android:src="@drawable/d"/>
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="3dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_light"
+            android:maxLines="1"
+            android:text="as asskdasdasd asd as dasd"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxLines="1"
+                android:text="\u20B9 500" />
+            <TextView
+                android:id="@+id/product_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="₹500"
+                android:foreground="@drawable/strike_foreground"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/poppins_light"
+                android:lineSpacingExtra="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp">
+        <CheckBox
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:button="@drawable/sl_favourite_24dp"
+            app:buttonTint="#FF5656"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

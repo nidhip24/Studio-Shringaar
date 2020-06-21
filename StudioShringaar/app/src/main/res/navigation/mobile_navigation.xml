@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.nk.studioshringaar.ui.home.HomeFragment"
+        android:label="Studio Shringaar"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.nk.studioshringaar.ui.account.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/account_fragment" >
+    </fragment>
+
+    <activity
+        android:id="@+id/wishList"
+        android:name="com.nk.studioshringaar.ui.wishlist.WishList"
+        android:label="activity_wish_list"
+        tools:layout="@layout/activity_wish_list" />
+    <activity
+        android:id="@+id/login"
+        android:name="com.nk.studioshringaar.ui.login.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+
+    <activity
+        android:id="@+id/order"
+        android:name="com.nk.studioshringaar.ui.order.Order"
+        android:label="activity_order"
+        tools:layout="@layout/activity_order" />
+
+    <fragment
+        android:id="@+id/nav_shopbycategory"
+        android:name="com.nk.studioshringaar.ui.shopbycategory.ShopByCategory"
+        android:label="Shop by Category"
+        tools:layout="@layout/shop_by_category_fragment"
+        />
+
+</navigation>

@@ -1,0 +1,10 @@
+
+> fibers@5.0.0 install c:\admin\public\node_modules\fibers
+> node build.js || nodejs build.js
+
+`win32-x64-72` exists; testing
+Binary is fine; exiting
++ fibers@5.0.0
+added 2 packages from 3 contributors and audited 1741 packages in 13.903s
+found 80 vulnerabilities (22 low, 33 moderate, 25 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
